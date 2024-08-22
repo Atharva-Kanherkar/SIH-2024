@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional Custom Styles */
+body {
+  @apply bg-gray-100 text-gray-800 antialiased;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-lg p-6 mb-6 transition transform hover:scale-105;
+}
+
+.button {
+  @apply bg-green-500 text-white rounded px-4 py-2 mt-4 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50;
+}
+
+.alert {
+  @apply text-red-600 font-bold;
+}
+
+.sidebar {
+  @apply bg-gradient-to-br from-indigo-600 to-blue-500 text-white h-full p-6 shadow-lg;
+}
+
+.sidebar h2 {
+  @apply text-xl font-bold mb-8 text-center;
+}
+
+.sidebar nav ul {
+  @apply space-y-4;
+}
+
+.sidebar nav ul li a {
+  @apply text-lg transition duration-300 ease-in-out hover:text-gray-200;
+}
+
+.content {
+  @apply flex-1 p-10 overflow-y-auto;
+}
+
+.report-summary {
+  @apply flex justify-between space-x-6;
+}
+
+.report-summary div {
+  @apply bg-gray-100 p-6 rounded-lg text-center shadow-md hover:bg-gray-200;
+}
+
+.report-summary h3 {
+  @apply text-lg font-semibold mb-2;
+}
+
+.report-summary p {
+  @apply text-2xl font-bold text-gray-700;
+}
