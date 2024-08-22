@@ -29,3 +29,6 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/Atharva-Kanherkar/SIH-2024.git
 cd SIH-2024
+git checkout new
+npm install
+npm run dev
